@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Le concours du moment{% endblock %}
+
+{% block body %}
+    <section class="py-5 text-center container-fluid concours">
+   {{ include('shared/navbar.html.twig') }}
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Votez votre infographie</h1>
+                <p class="lead ">
+                   pour vous informer vous pouvez
+                </p>
+                <p>
+                    <a href="#" class="btn btn-didacticiele my-2">Suivre le didacticiel</a>
+                    <span>ou</span>
+                    <a href="#" class="btn btn-voter my-2">Votez tous de suite</a>
+                </p>
+            </div>
+        </div>
+    </section>
+   {{ include('shared/footer.html.twig') }}   
+
+{% endblock %}

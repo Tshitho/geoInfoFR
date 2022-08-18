@@ -1,0 +1,317 @@
+
+@font-face {
+    font-family: "font-1";
+    src: url(../font/BAUHS93.ttf);
+}
+
+@font-face {
+    font-family: "font-2";
+    src: url(../font/BASKVILL.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+/*dictat*/
+.up-arrow {
+    position: absolute;
+    background-color: #009999;
+    font-family: "BASKVILL", "font-2", serif;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 18pt;
+    text-decoration: none;
+    z-index: 20;
+    
+    
+}
+
+.up-arrow:before {
+    content: '';
+    display: block;  
+    position: absolute;
+    
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    
+}
+.card{
+    width: 160px;
+    box-shadow: rgb(105, 105, 105) 1px 5px 7px ; 
+}
+.hidden-st{
+    display: none;
+}
+
+.card_body_active{
+    border: solid; 
+    border-width: thick;  
+    border-color: red;
+}
+
+#next{
+    position: fixed;
+    top: 15vh;
+    border: solid #009999 2px;
+    transform: translate(60px, -43px);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px;
+    width:150px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+}
+
+/* animeeBtn */
+.button {
+    background:  rgb(238, 174, 36) ;
+    color: #fff;
+    border: 3px solid rgb(238, 174, 36);
+    border-radius: 10px;
+    font: 24px "bauhaus93", "font-2", serif;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s ease-in-out;
+    letter-spacing: 2px;
+    /* padding-top: 15px; */
+    width: 180px;
+    height: 40px;
+  }
+  .button__wrapper {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-typewriter{
+    margin-left: 150px;
+  }
+  .button-typewriter p {
+    animation: typing 4s steps(12) infinite;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .button-typewriter .button__wrapper:hover p {
+    animation: blink 0.3s infinite;
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    55%, 65%, 75% {
+      opacity: 1;
+    }
+    60%, 70% {
+      opacity: 0;
+    }
+    80% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+/* finAnimeBtn */
+
+/*fin dictat*/
+h1{
+    font-family: "bauhaus93", "font-1", serif;
+    color: #009999;
+    font-size: 22pt;
+}
+.text-section{
+    font-family: "BASKVILL", "font-2", serif;
+    color: #000;
+    font-size: 14pt;
+}
+.text-section span{
+    color: #009999;
+}
+h3{
+    font-family: "bauhaus93", "font-1", serif;
+    color: #009999;
+    font-size: 16pt;
+}
+/* animation scrool */
+html, body, #root {
+    height: 100%;
+}
+/* body {
+    overflow: hidden;
+    margin: 0;
+} */
+#root {
+    overflow: auto;
+    font-family: sans-serif;
+}
+.section {
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+.section__content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+}
+.section--1{
+    background-image: url(../image/section1.png);
+    /* background-size: 100vw 100vh;
+    height: 100vh; */
+}
+.section--2{
+    background-image: url(../image/section2.png);
+    /* background-size: 100vw 100vh;
+    height: 100vh; */
+}
+.section--3{
+    background-image: url(../image/section3.png);
+    /* background-size: 100vw 100vh;
+    height: 100vh; */
+}
+.section--4{
+    background-image: url(../image/section4_1.png);
+    /* background-size: 100vw 100vh;
+    height: 100vh; */
+}
+.section--5{
+    background-image: url(../image/section5.png);
+    /* background-size: 100vw 100vh;
+    height: 100vh; */
+}
+.section--6{
+    background-image: url(../image/cartop.png);
+    /* background-size: 100vw 100vh;
+    height: 100vh; */
+}
+.caption {
+    background-color: grey;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 16px;
+}
+/* Fin animation scrool */
+
+/* Nav */
+.navbar{
+    font-family: "bauhaus93", "font-1", serif;
+    color: #000;
+    font-size: 14pt;
+}
+.navbar .logoGeo{
+    width: 100px;
+    margin-right: 100px;
+}
+.navbar .logoInfo{
+    width: 120px;
+}
+/* finNav */
+
+/* Section1 */
+
+.section1 img{
+    width: 450px;
+    margin-left: 70px;
+    
+}
+
+/* FinSection1 */
+/* section4 */
+
+
+/* Finsection4 */
+/* concours */
+.concours{
+    background: url(../image/backConcour.jpg);
+    background-repeat: no-repeat;
+}
+.concours .fw-light{
+    text-shadow: rgb(105, 105, 105) 1px 5px 5px ;
+}
+.btn-didacticiele{
+    background-color: #fff;
+    box-shadow: rgb(105, 105, 105) 1px 5px 7px ;
+}
+.btn-voter{
+    background-color: #009999;
+    box-shadow: rgb(105, 105, 105) 1px 5px 7px ;
+    color: #fff;
+}
+
+.concours-section-1{
+    background: url(../image/backConcourSection1.png);
+}
+.concours-section-2{
+    background: url(../image/Section2.png);
+    background-repeat: no-repeat;
+    height: 150vh;
+}
+.btn-note{
+    background: none;
+    border: #009999 solid 2px;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    padding-bottom: 30px;
+     margin-top: 5px;
+}
+.concours-section-1 .info{
+    box-shadow: rgb(105, 105, 105) 1px 5px 7px ;
+}
+.prew,.next{
+    padding-top: 150px;
+   width: 40px;
+   height: 40px;
+}
+/* finConcours */
+/* Footer */
+.footer{
+    background-image: url(../image/footer.png);
+    
+}
+.footer a{
+    text-decoration: none;
+    font-family: "bauhaus93", "font-1", serif;
+    text-shadow: rgb(105, 105, 105) 1px 5px 7px ;
+    color: #fff;
+    font-size: 14pt;
+}
+.footer p{
+    text-decoration: none;
+    font-family: "bauhaus93", "font-2", serif;
+    text-shadow: rgb(105, 105, 105) 1px 5px 7px ;
+    color: #fff;
+    font-size: 11pt;
+    margin-top: 15px;
+}
+.footer .mt{
+    margin-top: 250px;
+}
+
+/* finFooter */
+
+

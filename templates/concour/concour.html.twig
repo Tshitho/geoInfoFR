@@ -1,0 +1,86 @@
+    {% extends 'base.html.twig' %}
+
+    {% block title %}Le concours du moment{% endblock %}
+
+    {% block body %}
+        <section class="py-5 text-center container-fluid concours-section-1">
+    {{ include('shared/navbar.html.twig') }}
+            <div id="sous-titre">
+                <div class="st0 up-arrow "> voilà comment se présente l'interface de vote<br></div>
+                <div class="st1 hidden-st up-arrow fleche"> en appuyant sur l'un des flèches <br>vous pouvez défiler les geoinfogrphies vers la gauche <br> </div>
+                <div class="st2 hidden-st up-arrow "> ... ou vers la droite <br> </div>
+                <div class="st3 hidden-st up-arrow "> ceci est une geoinfographie,<br> vous pouvez cliquer dessus est l'inpecter <br> </div>
+                <div class="st4 hidden-st up-arrow "> cliquez sur les étoiles pour attribuez une note <br> </div>
+                <div class="st5 hidden-st up-arrow "> le nom de l'etudiant malgache qui a créé l'infographie</div>
+                <div class="st6 hidden-st up-arrow "> ... et la moyenne de sa note  </div>
+            </div>
+            <div class="body card_body_active" id="body_card_container">
+                <div class="d-flex flex-row justify-content-around">
+                    <div class="prew" id="arrow-prev">
+                        <img src="{{asset('assets/image/prew.png')}}" alt="" width ="40" height="40">
+                    </div>
+                    <div class="card" id="card_1">
+                        <div class="card_body">
+                            <img src="{{asset('assets/image/info.png')}}"  alt="concours" width ="150" height="300">
+                        </div>
+                        <div class="card_footer">
+                            <img src="{{asset('assets/image/etoil.png')}}" class="stars" alt="etoile">
+                            <h3  class="nom">Nom</h3>
+                            <div class="note"> <span> Note </span></div>
+                        </div>
+                    </div>
+                    <div class="me-3 card" id="card_2">
+                        <div class="card_body">
+                            <img src="{{asset('assets/image/info1.png')}}"  alt="concours" width ="150" height="300">
+                        </div>
+                        <div class="card_footer">
+                            <img src="{{asset('assets/image/etoil.png')}}" alt="etoile">
+                            <h3>Nom</h3>
+                            <button class="btn btn-note">Note:</button>
+                        </div>
+                    </div>
+                    <div class="me-3 card" id="card_3">
+                        <div class="card_body">
+                            <img src="{{asset('assets/image/info2.png')}}"  alt="concours" width ="150" height="300">
+                        </div>
+                        <div class="card_footer">
+                            <img src="{{asset('assets/image/etoil.png')}}" alt="etoile">
+                            <h3>Nom</h3>
+                            <button class="btn btn-note">Note:</button>
+                        </div>
+                    </div>
+                    <div class="me-3 card" id="card_4">
+                        <div class="card_body">
+                            <img src="{{asset('assets/image/info3.png')}}"  alt="concours" width ="150" height="300">
+                        </div>
+                        <div class="card_footer">
+                            <img src="{{asset('assets/image/etoil.png')}}" alt="etoile">
+                            <h3>Nom</h3>
+                            <button class="btn btn-note">Note:</button>
+                        </div>
+                    </div>
+                    <div class="me-3 card" id="card_5">
+                        <div class="card_body">
+                            <img src="{{asset('assets/image/info4.png')}}"  alt="concours" width ="150" height="300">
+                        </div>
+                        <div class="card_footer">
+                            <img src="{{asset('assets/image/etoil.png')}}" alt="etoile">
+                            <h3>Nom</h3>
+                            <button class="btn btn-note">Note:</button>
+                        </div>
+                    </div>
+                    <div class="me-3 next" id="arrow-next">
+                        <img src="{{asset('assets/image/next.png')}}" alt="" width ="40" height="40">
+                    </div>
+                </div>
+            </div>
+
+            <div class="action0 " id="next"> <span class="btn-ineractif"></span></div>
+        </section>
+        
+        <section class="py-5 text-center container-fluid concours-section-2">
+            
+        </section>
+        {{ include('shared/footer.html.twig') }}   
+
+    {% endblock %}

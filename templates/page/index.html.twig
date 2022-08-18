@@ -1,0 +1,258 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenue sur le page du vote {% endblock %}
+
+{% block body %}
+    
+
+ <div id="root">
+    <section class="section section--1">
+        <div class="section__content">
+           <div class="section1">
+                {{ include('shared/navbar.html.twig') }}
+                <div class="container-fluid row ms-4 mt-4">
+                    <div class="col-lg-6 m img">
+                        <img src="{{asset('assets/image/section1Image.png')}}" alt="">
+                    </div>
+                    <div class="col-lg-5 ms-5">
+                        <h1>
+                            POURQUOI <br> ​
+                            NOTEZ LES GEOINFOGRAPHIES <br>
+                            D'EDUTIANTS MALGACHES ?
+                        </h1>
+                        <p class="text-section">
+                            <span>Un concours</span><br>
+                            De réalisations de geoinfographies​
+                            … par de​s étudiants malgaches​
+                            à Madagascar​ sur des données 
+                            fournies par un sponsor français​
+
+                        </p>
+                        <p class="text-section">
+                            <span>Noter les geoinfographies ​</span><br>
+                            Formation des etudiants​
+                            Financement de leur études​
+                            Uniquement des étudiants malgaches 
+                            d’organismes de formations malgaches
+
+                        </p>
+                        <p class="text-section">
+                        Une geoinfographie, c’est …​
+                            Une infographie  ….​
+                            … avec une dimension géographique
+                        </p>
+
+                         <div class="item button-typewriter " style="--bg-color: #e74c3c">
+                            <div class="button__wrapper">
+                                <button class="button ">
+                                    <p>Lancez vous </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid section section--2">
+        <div class="section__content">
+            <div class="container section2 mt-4">
+                <div class=" row  mt-4">
+                    <h1 class="ms-5">Notations interactive</h1>
+                    <div class="col-lg-6 m img">
+                        <img src="{{asset('assets/image/section1Image.png')}}" alt="">
+                    </div>
+                    <div class="col-lg-5 ms-5">
+                        <h3>Comment noter ?</h3>
+                        <p class="text-section">
+                            Rien de plus simple. Cliquez sur les
+                            étoiles en-dessous des infographies
+                        </p>
+                        <p class="text-section">
+
+                            Vous pouvez le faire librement de façon
+                            anonyme...
+                        </p>
+
+                            ...ou en vous connectant comme
+                            participant dans l'onglet ‘’connexion‘’
+                        </p>
+                        <p class="text-section">
+
+                            Chaque géoinfographiste est noté. Vous
+                            vous pouvez donner une note de 1 à 
+                            10 étoiles à chaque infographie
+                            à chaque infographie. Une moyenne
+                            sera faite sur l'ensemnle des votants.
+                            Seuls les condidats ayant obtenu une
+                            moyenne supérieure à 5 étoiles seront classés.
+                        </p>
+                        <div class="item button-typewriter " style="--bg-color: #e74c3c">
+                            <div class="button__wrapper">
+                                <button class="button ">
+                                    <p>Lancez vous </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section class="section section--3">
+        <div class="section__content">
+            <div class="container section3 mt-4">
+                <div class=" row  mt-4">
+                    
+                    
+                    <div class="col">
+                    <h1 class="ms-5">
+                        Notez​ Comment ?
+                    </h1>
+                        <p class="text-section">
+                            Sur l'art de raconter des chiffres de
+                            façon claire et pédagogue, ce qu'on
+                            appelle le dataviz ou le data
+                            storytelling...
+                            ...ou tout simplement sur votre
+                            sensibilité personnelle
+                        </p>
+                        <p class="text-section">
+                            Ainsi les géoinfographies vont
+                            raconter une histoire de manière
+                            simple et facile à conmprendre gràce à
+                            l'addition des données et du design.s
+                        </p>
+                        <div class="item button-typewriter " style="--bg-color: #e74c3c">
+                            <div class="button__wrapper">
+                                <button class="button ">
+                                    <p>Lancez vous </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col  img">
+                        {# <img src="{{asset('assets/image/section3_1.png')}}" alt=""> #}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+   <section class="section section--4">
+        <div class="section__content">
+           
+                <div class="container-fluid row ms-4 ">
+                    <div class="col-lg-6 img">
+                        <img src="{{asset('assets/image/section4_2.png')}}" alt="" width="500px">
+                    </div>
+                    <div class="col-lg-5 ms-5">
+                        <h1>
+                            D’où viennent <br>
+                            les données ? 
+                        </h1>
+                        <p class="text-section">
+                            Les participants aux concours utilisent
+                            des données issues de la base de
+                            données géolocalisées "geoCube"
+                            éditée par la société Infostat-
+                            Marketing, filiale de Drapier Holding
+                            Développement.
+                        </p>
+                        <p class="text-section">
+                            Plus de 17 000 valeurs composent
+                            cette base multithématique. Elle
+                            permet aux professionnels du
+                            géomarketing d'avoir de nombreuses
+                            données à disposition pour leurs
+                            études.
+
+                        </p>
+                        <div class="item button-typewriter " style="--bg-color: #e74c3c">
+                            <div class="button__wrapper">
+                                <button class="button ">
+                                    <p>Lancez vous </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+    </section>
+    <section class="section section--5">
+        <div class="section__content">
+            <div class="container-fluid row ms-4 ">
+                <div class="col-lg-5 ms-5">
+                    <h1>
+                        Formation et <br>
+                        financement
+                    </h1>
+                    <p class="text-section">
+                        •  En votant pour vos géoinfographies préférées,
+                            vous valorisez les travaux des futurs
+                            professionnels de la cartographie, de
+                            l'infographie ou du géomarketing
+                    </p>
+                    <p class="text-section">
+                        •  Par ailleurs, les gagnants de chaque concours
+                            bénéficient d'un soutien financier appréciable. Le
+                            meilleur gagnera 100 € et 2è et 3è 25 €.
+                    </p>
+                    <p class="text-section">
+                        •  Enfin, cette aventure permettra aux futurs
+                            experts malgaches de monter en compétences.
+                    </p>
+                    <div class="item button-typewriter " style="--bg-color: #e74c3c">
+                        <div class="button__wrapper">
+                            <button class="button ">
+                                <p>Lancez vous </p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 img">
+                    <img src="{{asset('assets/image/section5_3.png')}}" alt="" width="500px">
+                </div>
+            </div>    
+        </div>
+    </section>
+
+     <section class="section section--6">
+        <div class="section__content">
+            <div class="container-fluid row ms-4 ">
+                <div class="col-lg-5 ms-5">
+                    <h1>
+                        C’est quoi, <br>
+                        une geoinfographie
+                    </h1>
+                    <p class="text-section">
+                        C’est un système d'information conçu pour recueillir, 
+                        stocker, traiter, analyser, gérer et présenter tous les 
+                        types de données spatiales et géographiques. 
+                        L’acronyme SIG est parfois utilisé pour définir les 
+                        « sciences de l’information géographique » ou 
+                        « études sur l’information géospatiale ».
+                    </p>
+                    <div class="item button-typewriter " style="--bg-color: #e74c3c">
+                        <div class="button__wrapper">
+                            <button class="button ">
+                                <p>Lancez vous </p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 img">
+                    <img src="{{asset('assets/image/section6.png')}}" alt="" width="500px">
+                </div>
+            </div>    
+        </div>
+    </section>
+    <section class="section section--7">
+        {{ include('shared/footer.html.twig') }}
+    </section>
+</div> 
+
+{% endblock %}
